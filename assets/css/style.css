@@ -353,6 +353,81 @@ tbody td {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* ── INLINE EDIT ROW ── */
+tr.editing {
+  background: var(--navy-row);
+}
+
+tr.editing td {
+  padding: 7px 8px;
+}
+
+.edit-code-input {
+  background: var(--navy-mid);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .88rem;
+  font-weight: 500;
+  padding: 5px 9px;
+  width: 110px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.edit-select {
+  background: var(--navy-mid);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: .85rem;
+  padding: 5px 6px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-edit {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .75rem;
+  padding: 5px 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+
+.btn-edit:hover {
+  border-color: var(--accent);
+  color: var(--accent-lt);
+}
+
+.btn-save-row {
+  background: var(--accent);
+  border: none;
+  color: var(--white);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .75rem;
+  padding: 5px 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+.btn-save-row:hover {
+  background: var(--accent-lt);
+}
+
+.row-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
 /* ── DIVIDER ── */
 .divider {
   border: none;
